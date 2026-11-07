@@ -1,0 +1,11 @@
+Following code results in
+python model/evaluate_models.py
+
+
+                 Model  Accuracy       AUC  Precision    Recall        F1       MCC
+5              XGBoost  0.859418  0.894518   0.750897  0.557961  0.640209  0.564653
+4        Random Forest  0.857273  0.889923   0.774018  0.513098  0.617112  0.550833
+0  Logistic Regression  0.844966  0.866442   0.728074  0.492235  0.587365  0.510686
+3          Naive Bayes  0.803017  0.827047   0.554675  0.615059  0.583309  0.455822
+2                  KNN  0.836316  0.827100   0.689678  0.490510  0.573288  0.486140
+1        Decision Tree  0.784064  0.697207   0.517599  0.539765  0.528450  0.388643
