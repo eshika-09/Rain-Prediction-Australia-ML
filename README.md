@@ -6,16 +6,11 @@ A machine learning project that predicts whether it will rain the following day 
 
 👩‍🎓 STUDENT INFO
 
-NAME: Eshika Goyal
-
-BITS ID: 2026AJ05336
-
-BITS EMAIL: 2026aj05336@wilp.bits-pilani.ac.in
-
-APP LINK: [Rain Fall Prediction in Aus by Eshika Goyal] :
-
-DATA SOURCE: https://www.kaggle.com/datasets/jsphyg/weather-dataset-rattle-package?select=weatherAUS.csv
-
+* Name: Eshika Goyal
+* BITS ID: 2026AJ05336
+* BITS Email: 2026aj05336@wilp.bits-pilani.ac.in
+* App Link: Rain Fall Prediction in Aus by Eshika Goyal
+* Data Source: Kaggle – Rain in Australia Dataset
 
 ⸻
 
@@ -27,6 +22,7 @@ The objective of this project is to develop a machine learning classification sy
 
 The project explores multiple classification algorithms, evaluates their performance using standard metrics, and identifies the most suitable model for rain prediction.
 
+⸻
 
 🤖 b) Models Used and Performance Comparison
 
@@ -76,8 +72,8 @@ Based on the evaluation results:
 
 * Logistic Regression achieved the highest F1 Score of 58.74% and the highest MCC of 0.5107, making it the best-performing model overall based on the F1 Score.
 * Support Vector Machine (SVM) performed very similarly to Logistic Regression, achieving an accuracy of 84.49%.
-* Naive Bayes achieved the highest recall of 61.51%, indicating that it identified a larger proportion of actual rainy days.
-* KNN delivered reasonably good accuracy and precision but had a comparatively lower recall.
+* Naive Bayes achieved the highest recall of 61.51%, identifying a larger proportion of actual rainy days.
+* KNN delivered reasonably good accuracy and precision but had comparatively lower recall.
 * Decision Tree achieved the lowest ROC-AUC and F1 Score among the five models.
 
 Overall, Logistic Regression provided the best balance of precision and recall, while Naive Bayes was more effective at identifying rainy days.
@@ -99,6 +95,8 @@ source myenv/bin/activate
 3. Install dependencies
 
 pip install -r requirements.txt
+
+⸻
 
 🔄 Project Workflow
 
@@ -126,17 +124,17 @@ Launches the web application where users can enter weather details and get next-
 
 Rain_Prediction_in_Australia/
 │
-├── 📂 dataset/
+├── dataset/
 │   ├── test_sample.csv
 │   └── weatherAUS.csv
 │
-├── 📂 model/
+├── model/
 │   ├── preprocessing.py
 │   ├── train_models.py
 │   ├── evaluate_models.py
 │   └── create_test_sample.py
 │
-├── 📂 trained_models/
+├── trained_models/
 │   ├── logistic_model.pkl
 │   ├── decision_tree_model.pkl
 │   ├── knn_model.pkl
@@ -150,12 +148,12 @@ Rain_Prediction_in_Australia/
 │   ├── test_data.pkl
 │   └── model_comparison.csv
 │
-├── 📄 app.py
-├── 📄 requirements.txt
-├── 📄 README.md
-├── 📄 output_metric.txt
-├── 🖼️ image.png
-└── 📄 .gitignore
+├── app.py
+├── requirements.txt
+├── README.md
+├── output_metric.txt
+├── image.png
+└── .gitignore
 
 ⸻
 
