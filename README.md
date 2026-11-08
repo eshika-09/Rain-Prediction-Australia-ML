@@ -6,12 +6,17 @@ A machine learning project that predicts whether it will rain the following day 
 
 👩‍🎓 STUDENT INFO
 
-Field	Details
-Name	Eshika Goyal
-BITS ID	2026AJ05336
-BITS Email	[Your BITS Email]
-Application Link	🌐 Rain Prediction –
-Dataset Source: Kaggle – Rain in Australia : https://www.kaggle.com/datasets/jsphyg/weather-dataset-rattle-package?select=weatherAUS.csv
+NAME: Eshika Goyal
+
+BITS ID: 2026AJ05336
+
+BITS EMAIL: 2026aj05336@wilp.bits-pilani.ac.in
+
+APP LINK: [Rain Fall Prediction in Aus by Eshika Goyal] :
+
+DATA SOURCE: https://www.kaggle.com/datasets/jsphyg/weather-dataset-rattle-package?select=weatherAUS.csv
+<img width="468" height="158" alt="image" src="https://github.com/user-attachments/assets/7c6fd156-e11f-4788-b6d6-25568f32fe0c" />
+
 
 ⸻
 
