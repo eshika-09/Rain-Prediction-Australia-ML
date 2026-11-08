@@ -1,204 +1,184 @@
-# STUDENT INFO
-NAME: Eshika Goyal
+🌦️ Rain Prediction in Australia Using Machine Learning
 
-BITS ID: 2026AJ05336
+A machine learning project that predicts whether it will rain the following day in Australia using historical weather data. The project implements and compares five classification algorithms and provides an interactive Streamlit web application for making predictions.
 
-BITS EMAIL: 2026aj05336@wilp.bits-pilani.ac.in
+⸻
 
-APP LINK: [Rain Fall Prediction in Aus by Eshika Goyal] : https://rain-prediction-australia-ml-2026aj05336-eshikagoyal.streamlit.app/
+👩‍🎓 STUDENT INFO
 
-DATA SOURCE: https://www.kaggle.com/datasets/jsphyg/weather-dataset-rattle-package?select=weatherAUS.csv
-###
+Field	Details
+Name	Eshika Goyal
+BITS ID	2026AJ05336
+BITS Email	[Your BITS Email]
+Application Link	🌐 Rain Prediction –
+Dataset Source: Kaggle – Rain in Australia : https://www.kaggle.com/datasets/jsphyg/weather-dataset-rattle-package?select=weatherAUS.csv
 
-# 🌦️ Rain Prediction using Machine Learning
+⸻
 
-### a) Problem Statement
-The objective of this project is to predict whether it will rain the next day (RainTomorrow) based on historical weather data from Australia. This is a binary classification problem where the target variable has two classes:
+📌 a) Problem Statement
 
-0 → No Rain
+Weather forecasting plays an important role in agriculture, transportation, tourism, and everyday decision-making.
 
-1 → Rain
+The objective of this project is to develop a machine learning classification system that predicts whether it will rain the next day (RainTomorrow) based on historical weather observations across different locations in Australia.
 
-Six different machine learning classification models are implemented and compared using multiple evaluation metrics. A Streamlit-based interactive dashboard is developed to perform real-time predictions and model evaluation.
+The project explores multiple classification algorithms, evaluates their performance using standard metrics, and identifies the most suitable model for rain prediction.
 
-### b) Dataset Description
-The dataset used is the Rain in Australia dataset (weatherAUS.csv).
 
-Dataset Characteristics:
+🤖 b) Models Used and Performance Comparison
 
-    Instances: ~145,000 records
+Five classification algorithms were implemented and evaluated:
 
-    Features: 22 input features
+1. Logistic Regression
+2. Decision Tree Classifier
+3. K-Nearest Neighbors (KNN)
+4. Gaussian Naive Bayes
+5. Support Vector Machine (SVM)
 
-Target Variable: RainTomorrow
+The models were evaluated using the following performance metrics:
 
-Type: Binary Classification
+* Accuracy: Overall proportion of correctly classified observations.
+* Precision: Proportion of predicted rainy days that were actually rainy.
+* Recall: Proportion of actual rainy days correctly identified.
+* F1 Score: Harmonic mean of precision and recall.
+* ROC-AUC: Ability of the model to distinguish between the two classes.
+* MCC: Matthews Correlation Coefficient, which considers all four confusion-matrix outcomes.
 
-Important Features:
+⸻
 
-    Date (converted to Year, Month, Day)
-    Location
-    MinTemp
-    MaxTemp
-    Rainfall
-    WindSpeed9am
-    WindSpeed3pm
-    Humidity9am
-    Humidity3pm
-    Pressure9am
-    Pressure3pm
-    Temp9am
-    Temp3pm
-    RainToday
-    Cloud9am
-    Cloud3pm
-    Sunshine
-    Evaporation
-    Wind directions
-    Wind gust speed
+📈 c) Comparison Table
 
-Preprocessing Steps:
+The following table presents the performance of all five models on the test dataset.
 
-    - Dropped rows with missing target
-    - Converted RainTomorrow and RainToday to 0/1
-    - Converted Date into Year, Month, and Day
+Model	Accuracy	Precision	Recall	F1 Score	ROC-AUC	MCC
+🥇 Logistic Regression	84.50%	72.81%	49.22%	58.74%	0.8664	0.5107
+🥈 Support Vector Machine	84.49%	72.95%	48.99%	58.61%	0.8664	0.5101
+🥉 Naive Bayes	80.30%	55.47%	61.51%	58.33%	0.8270	0.4558
+KNN	83.63%	68.97%	49.05%	57.33%	0.8271	0.4861
+Decision Tree	78.68%	52.32%	55.00%	53.63%	0.7026	0.3981
 
-Applied:
+📊 Model Performance Visualization
 
-    Median imputation for numeric features
-    Most frequent imputation for categorical features
-    Label Encoding for categorical variables
-    Standard scaling (for Logistic Regression and KNN)
+The following visualization provides a graphical comparison of the performance of all five classification models.
 
-### c) Models Used and Performance Comparison
-The following 6 classification models were implemented:
+<p align="center">
+  <img src="image.png" alt="Model Performance Comparison" width="800">
+</p>
 
-        Logistic Regression
-        Decision Tree Classifier
-        K-Nearest Neighbors (kNN)
-        Naive Bayes (GaussianNB)
-        Random Forest (Ensemble)
-        XGBoost (Ensemble)
+⸻
 
-### d) Comparison Table
+🔍 d) Observations on Model Performance
 
-![alt text](image.png)
+Based on the evaluation results:
 
-### e) Observations on Model Performance
+* Logistic Regression achieved the highest F1 Score of 58.74% and the highest MCC of 0.5107, making it the best-performing model overall based on the F1 Score.
+* Support Vector Machine (SVM) performed very similarly to Logistic Regression, achieving an accuracy of 84.49%.
+* Naive Bayes achieved the highest recall of 61.51%, indicating that it identified a larger proportion of actual rainy days.
+* KNN delivered reasonably good accuracy and precision but had a comparatively lower recall.
+* Decision Tree achieved the lowest ROC-AUC and F1 Score among the five models.
 
-| ML Model Name | Observation about Model Performance| 
-|----------|----------|
-| Logistic Regression | Provides strong baseline performance with good accuracy and AUC. However, recall for rain class is moderate due to class imbalance.  |
-| Decision Tree  | Lowest overall performance. Prone to overfitting and poor generalization compared to ensemble methods.  |
-| kNN  | Moderate performance. Sensitive to feature scaling and distance metrics. Performs better than Decision Tree but worse than ensemble models.  |
-| Naive Bayes  | Higher recall for rain class compared to some models, but lower precision. Assumes feature independence, which limits performance.  |
-|Random Forest (Ensemble)  | Strong performance due to bagging and variance reduction. Handles non-linearity well and performs significantly better than single tree.  |
-| XGBoost (Ensemble)  | Best overall model. Achieved highest Accuracy, AUC, F1 Score, and MCC. Gradient boosting improves prediction by correcting previous errors sequentially. Selected as final deployed model.  |
+Overall, Logistic Regression provided the best balance of precision and recall, while Naive Bayes was more effective at identifying rainy days.
 
+⸻
 
+⚙️ How to Run
 
-## How to Run?
-1. pythom -m venv myenv
-2. source myenv/Scripts/activate
-3. pip install -r requirements.txt
-4. python model/train_models.py
-5. python model/evaluate_model.py
-6. streamlit run app.py (To Run Locally)
+1. Clone the repository
 
+git clone https://github.com/eshika-09/Rain-Prediction-Australia-ML.git
+cd Rain-Prediction-Australia-ML
 
+2. Create and activate virtual environment
 
-## FLOW
-Full Execution Flow of Your Project
+python3 -m venv myenv
+source myenv/bin/activate
 
-There are 3 layers:
-   
-Training
+3. Install dependencies
 
-Evaluation
+pip install -r requirements.txt
 
-App (Inference)
+🔄 Project Workflow
 
-### Step 1 — Train Models (Run Once)
-  
-    - From project root:
-  
-    - python model/train_models.py
-  
-     What happens internally:
-   
-    - Load dataset (dataset/weatherAUS.csv)
-   
-    - Preprocess data
-   
-    - Split into train/test
-    
-    - Fit scaler
-    
-    - Train all 6 models
-    
-    Save:
+1️⃣ Train the Models
 
-    - Models → trained_models/
+python model/train_models.py
 
-    - Scaler → trained_models/
+Trains the five machine learning models and saves them in the trained_models/ folder.
 
-    - Test data → trained_models/
+2️⃣ Evaluate the Models
 
-   After this step:
-   trained models exist on disk.
+python model/evaluate_models.py
 
+Evaluates all five models and saves their performance metrics in model_comparison.csv.
 
+3️⃣ Run the Streamlit Application
 
-## Step 2 — Evaluate Models
+streamlit run app.py
 
-    Running:
+Launches the web application where users can enter weather details and get next-day rain predictions.
 
-    - python model/evaluate_models.py
+⸻
 
-    What happens internally:
+📁 Project Structure
 
-    - Load saved test data
+Rain_Prediction_in_Australia/
+│
+├── 📂 dataset/
+│   ├── test_sample.csv
+│   └── weatherAUS.csv
+│
+├── 📂 model/
+│   ├── preprocessing.py
+│   ├── train_models.py
+│   ├── evaluate_models.py
+│   └── create_test_sample.py
+│
+├── 📂 trained_models/
+│   ├── logistic_model.pkl
+│   ├── decision_tree_model.pkl
+│   ├── knn_model.pkl
+│   ├── naive_bayes_model.pkl
+│   ├── svm_model.pkl
+│   ├── scaler.pkl
+│   ├── encoders.pkl
+│   ├── num_imputer.pkl
+│   ├── cat_imputer.pkl
+│   ├── feature_columns.pkl
+│   ├── test_data.pkl
+│   └── model_comparison.csv
+│
+├── 📄 app.py
+├── 📄 requirements.txt
+├── 📄 README.md
+├── 📄 output_metric.txt
+├── 🖼️ image.png
+└── 📄 .gitignore
 
-    - Load saved scaler
+⸻
 
-    - Load saved models
+💾 INFO
 
-    - Generate predictions
+The trained_models/ directory contains the saved machine learning models and preprocessing objects.
 
-    Compute:
+The .pkl files are generated using Joblib and are used by the Streamlit application to load trained models without requiring retraining every time the application is launched.
 
-        - Accuracy
+The project uses Git LFS (Large File Storage) to manage large model files.
 
-        - AUC
+⸻
 
-        - Precision
+🛠️ Technologies Used
 
-        - Recall
+* Python – Core programming language
+* NumPy – Numerical computations
+* Pandas – Data manipulation and analysis
+* Scikit-learn – Machine learning algorithms and evaluation
+* Matplotlib & Seaborn – Data visualization
+* Streamlit – Interactive web application
+* Git & Git LFS – Version control and large file management
 
-        - F1
+⸻
 
-        - MCC
+⭐ Project Summary
 
-        - Print comparison table
+This project demonstrates the application of supervised machine learning techniques to a real-world weather prediction problem. By implementing and comparing five classification algorithms, it highlights the importance of evaluating models using multiple performance metrics rather than accuracy alone.
 
-
-
-
-## Project Structure
-dataset/           → raw data
-
-model/             → training + evaluation code
-
-trained_models/    → saved artifacts
-
-app.py             → inference
-
-### INFO
-.pkl stands for pickle file.
-It is a Python file format used to serialize (save) objects to disk.
-In my project, .pkl files contain:
-- Trained ML models
-- Scaler object
-- Test dataset
-
-
+Developed as part of the M.Tech in Artificial Intelligence and Machine Learning programme at BITS Pilani.
