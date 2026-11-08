@@ -9,8 +9,8 @@ A machine learning project that predicts whether it will rain the following day 
 * Name: Eshika Goyal
 * BITS ID: 2026AJ05336
 * BITS Email: 2026aj05336@wilp.bits-pilani.ac.in
-* App Link: Rain Fall Prediction in Aus by Eshika Goyal
-* Data Source: Kaggle – Rain in Australia Dataset
+* App Link: Rain Fall Prediction in Aus by Eshika Goyal :https://github.com/eshika-09/Rain-Prediction-Australia-ML.git
+* Data Source: Kaggle – Rain in Australia Dataset: https://www.kaggle.com/datasets/jsphyg/weather-dataset-rattle-package?select=weatherAUS.csv
 
 ⸻
 
