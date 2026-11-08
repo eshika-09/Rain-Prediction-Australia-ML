@@ -5,7 +5,7 @@ BITS ID: 2026AJ05336
 
 BITS EMAIL: 2026aj05336@wilp.bits-pilani.ac.in
 
-APP LINK: [Rain Fall Prediction in Aus by Eshika Goyal]
+APP LINK: [Rain Fall Prediction in Aus by Eshika Goyal] : https://rain-prediction-australia-ml-2026aj05336-eshikagoyal.streamlit.app/
 
 DATA SOURCE: https://www.kaggle.com/datasets/jsphyg/weather-dataset-rattle-package?select=weatherAUS.csv
 ###
